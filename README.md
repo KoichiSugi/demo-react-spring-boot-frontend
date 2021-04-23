@@ -1,5 +1,5 @@
 
-## The frontend part of this project can be found in this link:
+## The backend part of this project can be found in this link:
 https://github.com/KoichiSugi/demo-react-spring-boot-backend.git
 
 ## The following tools and technologies are used:
