@@ -1,3 +1,26 @@
+
+## The frontend part of this project can be found in this link:
+https://github.com/KoichiSugi/demo-react-spring-boot-backend.git
+
+## The following tools and technologies are used:
+
+* React
+* JSX
+* RestAPI
+* Axios
+* VScode
+* React Router
+
+## Useful Resources
+* Java Guides
+https://www.javaguides.net/2020/07/react-js-spring-boot-rest-api-example-tutorial.html
+
+* Lombok
+https://javabydeveloper.com/lombok-requiredargsconstructor-examples/
+
+
+--------------------------------------------------------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
