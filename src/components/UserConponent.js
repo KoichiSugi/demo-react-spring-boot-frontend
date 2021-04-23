@@ -1,6 +1,8 @@
 
 import React from 'react';
 import UserService from '../services/UserServices';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEdit, faTrash } from '@fortawesome/free-solid-svg-icons'
 
 class UserConponent extends React.Component {
     //The constructor() method is called before anything else, when the component is initiated
@@ -77,8 +79,10 @@ class UserConponent extends React.Component {
                                             <td>{user.occupation}</td>
                                             <td>{user.location}</td>
                                             <td>
-                                                <button onClick={() => this.editUser(user.id)} className="btn btn-info">Update</button>
-                                                <button onClick={() => this.deleteUser(user.id)} className="btn btn-danger">Delete</button>
+                                                {/* <button onClick={() => this.editUser(user.id)} className="btn btn-info">Update</button> */}
+                                                {/* <button onClick={() => this.deleteUser(user.id)} className="btn btn-danger">Delete</button> */}
+                                                <button class="btn btn-info"><FontAwesomeIcon icon={faEdit} size="1x" onClick={() => this.editUser(user.id)} /></button>  &nbsp;
+                                                <button class="btn btn-danger"><FontAwesomeIcon icon={faTrash} size="1x" onClick={() => this.deleteUser(user.id)} /></button>
                                             </td>
                                         </tr>
                                 )

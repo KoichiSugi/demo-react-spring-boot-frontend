@@ -111,13 +111,14 @@ class CreateUserComponent extends Component {
                                     </div>
                                     <button className="btn btn-success" onClick={this.saveUser}>Save</button>
                                     <button className="btn btn-danger" onClick={this.cancel.bind(this)} style={{ marginLeft: "10px" }}>Cancel</button>
+                                    
                                 </form>
                             </div>
                         </div>
-                    </div>
-                </div>
-
+                    </div>  
+                </div>    
             </div>
+            
         );
     }
 }
