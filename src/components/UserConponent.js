@@ -3,6 +3,7 @@ import React from 'react';
 import UserService from '../services/UserServices';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEdit, faTrash } from '@fortawesome/free-solid-svg-icons'
+import faker from 'faker';
 
 class UserConponent extends React.Component {
     //The constructor() method is called before anything else, when the component is initiated
@@ -54,6 +55,7 @@ class UserConponent extends React.Component {
                     <table className="table table-striped">
                         <thead>
                             <tr>
+                                <td>Pic</td>
                                 <td>User ID</td>
                                 <td>User First Name</td>
                                 <td>User Last Name</td>
@@ -70,6 +72,9 @@ class UserConponent extends React.Component {
                                 this.state.users.map(
                                     user =>
                                         <tr key={user.id}>
+                                            <a href="/" className="avatar">
+                                                <img style={{height:"80px", width: "80px"}} alt="avater" src={faker.image.avatar()} />
+                                            </a>
                                             <td>{user.id}</td>
                                             <td>{user.firstName}</td>
                                             <td>{user.lastName}</td>
@@ -81,7 +86,7 @@ class UserConponent extends React.Component {
                                             <td>
                                                 {/* <button onClick={() => this.editUser(user.id)} className="btn btn-info">Update</button> */}
                                                 {/* <button onClick={() => this.deleteUser(user.id)} className="btn btn-danger">Delete</button> */}
-                                                <button class="btn btn-info"><FontAwesomeIcon icon={faEdit} size="1x" onClick={() => this.editUser(user.id)} /></button>  &nbsp;
+                                                <button class="btn btn-info"><FontAwesomeIcon icon={faEdit} size="1x" onClick={() => this.editUser(user.id)} /></button>  
                                                 <button class="btn btn-danger"><FontAwesomeIcon icon={faTrash} size="1x" onClick={() => this.deleteUser(user.id)} /></button>
                                             </td>
                                         </tr>
