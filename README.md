@@ -10,6 +10,7 @@ https://github.com/KoichiSugi/demo-react-spring-boot-backend.git
 * Axios
 * VScode
 * React Router
+* faker.js
 
 ## Useful Resources
 * Java Guides
